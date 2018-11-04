@@ -10,5 +10,5 @@ Vcs-Git: https://github.com/stribika/ec2-net-utils.git
 
 Package: ec2-net-utils
 Architecture: all
-Depends: ${misc:Depends}
+Depends: curl, iproute2, isc-dhcp-client, runit, ${misc:Depends}
 Description: Utilities for managing elastic network interfaces on EC2
