@@ -15,7 +15,7 @@ if [ -f /dev/.in_sysinit ]; then
   exit
 fi
 
-. /etc/sysconfig/network-scripts/ec2net-functions
+. /etc/ec2net/ec2net-functions
 
 case $ACTION in
   add)

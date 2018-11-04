@@ -18,7 +18,7 @@ if [ $UID -ne 0 ]; then
   exit 1
 fi
 
-. /etc/sysconfig/network-scripts/ec2net-functions
+. /etc/ec2net/ec2net-functions
 
 deactivate_primary
 unplug_interface

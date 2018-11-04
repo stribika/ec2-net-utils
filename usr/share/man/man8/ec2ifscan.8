@@ -16,7 +16,7 @@ The
 .B ec2ifscan
 command may be used to find and configure elastic network interfaces in an
 unconfigured state. An interface is considered to be unconfigured if the link
-is down, and no configuration exists in /etc/sysconfig/network-scripts.
+is down, and no configuration exists in /etc/ec2net.
 
 A hotplug \fBadd\fR event is generated for each unconfigured interface that is
 found. This provides another opportunity for udev rules to automatically

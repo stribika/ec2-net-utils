@@ -34,9 +34,9 @@ RTABLE=${INTERFACE#eth}
 let RTABLE+=10000
 
 metadata_base="http://169.254.169.254/latest/meta-data/network/interfaces/macs"
-config_file="/etc/sysconfig/network-scripts/ifcfg-${INTERFACE}"
-route_file="/etc/sysconfig/network-scripts/route-${INTERFACE}"
-route6_file="/etc/sysconfig/network-scripts/route6-${INTERFACE}"
+config_file="/etc/ec2net/ifcfg-${INTERFACE}"
+route_file="/etc/ec2net/route-${INTERFACE}"
+route6_file="/etc/ec2net/route6-${INTERFACE}"
 dhclient_file="/etc/dhcp/dhclient-${INTERFACE}.conf"
 
 # make no changes to unmanaged interfaces

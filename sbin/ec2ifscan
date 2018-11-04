@@ -13,7 +13,7 @@ fi
 
 echo "[ec2ifscan] Scanning for unconfigured interfaces"
 for dev in $(find /sys/class/net/eth*) ; do
-  cfg="/etc/sysconfig/network-scripts/ifcfg-${dev##*/}"
+  cfg="/etc/ec2net/ifcfg-${dev##*/}"
   state=$(cat ${dev}/operstate)
   if [ ! -e "${cfg}" ] && [ "${state}" == "down" ] ; then
     echo "[ec2ifscan] Configuring ${dev##*/}"

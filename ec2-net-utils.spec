@@ -51,13 +51,13 @@ interfaces.
 %install
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/udev/rules.d/
-mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/sysconfig/network-scripts/
+mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/ec2net/
 mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/dhcp/dhclient.d/
 mkdir -p $RPM_BUILD_ROOT%{_mandir}/man8/
 
 install -m644 %{SOURCE2} $RPM_BUILD_ROOT%{_sysconfdir}/udev/rules.d/
-install -m644 %{SOURCE3} $RPM_BUILD_ROOT%{_sysconfdir}/sysconfig/network-scripts/
-install -m755 %{SOURCE4} $RPM_BUILD_ROOT%{_sysconfdir}/sysconfig/network-scripts/
+install -m644 %{SOURCE3} $RPM_BUILD_ROOT%{_sysconfdir}/ec2net/
+install -m755 %{SOURCE4} $RPM_BUILD_ROOT%{_sysconfdir}/ec2net/
 install -m755 %{SOURCE7} $RPM_BUILD_ROOT%{_sysconfdir}/dhcp/dhclient.d/
 %if %{systemd}
 install -d -m755 $RPM_BUILD_ROOT%{_sbindir}
@@ -104,8 +104,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/udev/rules.d/53-ec2-network-interfaces.rules
 %{_sysconfdir}/udev/rules.d/75-persistent-net-generator.rules
 %{_sysconfdir}/modprobe.d/ixgbevf.conf
-%{_sysconfdir}/sysconfig/network-scripts/ec2net-functions
-%{_sysconfdir}/sysconfig/network-scripts/ec2net.hotplug
+%{_sysconfdir}/ec2net/ec2net-functions
+%{_sysconfdir}/ec2net/ec2net.hotplug
 %{_sysconfdir}/dhcp/dhclient.d/ec2dhcp.sh
 %if %{systemd}
 %{_sbindir}/ec2ifup

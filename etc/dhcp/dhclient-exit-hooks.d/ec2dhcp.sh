@@ -8,7 +8,7 @@
 
 INTERFACE="${interface}"
 PREFIX="${new_prefix}"
-. /etc/sysconfig/network-scripts/ec2net-functions
+. /etc/ec2net/ec2net-functions
 
 remove_aliases
 remove_rules

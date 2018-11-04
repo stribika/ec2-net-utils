@@ -16,7 +16,7 @@ and
 .B ec2ifdown
 commands may be used to configure (or, respectively, deconfigure) a network
 interface based on its definition in the instance metadata store. The resulting
-configuration will be stored in /etc/sysconfig/network-scripts.
+configuration will be stored in /etc/ec2net.
 
 These scripts take one argument: the name of the network interface (e.g. eth0).
 If the configuration for this interface is present and defines EC2SYNC=no, the
@@ -25,9 +25,9 @@ replaced or removed.
 
 .SH FILES
 .TP
-\fB/etc/sysconfig/network-scripts/ifcfg-<IFACE>\fR
+\fB/etc/ec2net/ifcfg-<IFACE>\fR
 The configuration for the network interface.
 
 .TP
-\fB/etc/sysconfig/network-scripts/route-<IFACE>\fR
+\fB/etc/ec2net/route-<IFACE>\fR
 The static route configuration for the network interface.
