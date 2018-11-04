@@ -1,0 +1,7 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Amazon Web Services
+Upstream-Contact: https://github.com/aws/ec2-net-utils/issues
+
+Files: *
+Copyright: 2012 Amazon.com, Inc
+License: MIT

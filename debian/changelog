@@ -1,0 +1,7 @@
+ec2-net-utils (0.0.1) unstable; urgency=medium
+
+  * Initial release
+  * Ported scripts to work on Devuan with Runit
+
+ -- Andras Stribik <andras@stribik.technology>  Sun, 04 Nov 2018 00:59:01 -0400
+

@@ -1,0 +1,14 @@
+Source: ec2-net-utils
+Section: net
+Priority: optional
+Maintainer: Stribik András <andras@stribik.technology>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+Homepage: https://github.com/aws/ec2-net-utils
+Vcs-Browser: https://github.com/stribika/ec2-net-utils
+Vcs-Git: https://github.com/stribika/ec2-net-utils.git
+
+Package: ec2-net-utils
+Architecture: all
+Depends: ${misc:Depends}
+Description: Utilities for managing elastic network interfaces on EC2
